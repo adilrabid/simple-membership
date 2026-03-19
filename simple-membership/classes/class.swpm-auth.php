@@ -84,7 +84,7 @@ class SwpmAuth {
 		// In this case, we will attempt to retrieve the data from the login form's POST data.
 		global $wpdb;
 		$swpm_user_name = empty( $user ) ? apply_filters( 'swpm_user_name', (isset($_POST['swpm_user_name']) ? ($_POST['swpm_user_name']) : '') ) : $user;
-		$swpm_password = empty( $user ) ? (isset($_POST['swpm_password']) ? ($_POST['swpm_password']) : '') : $user;
+		$swpm_password = empty( $pass ) ? (isset($_POST['swpm_password']) ? ($_POST['swpm_password']) : '') : $pass;
 
 		if ( isset($_POST['swpm_user_name']) && empty ( $swpm_user_name )){
 			//Login form was submitted but the username field was left empty.
